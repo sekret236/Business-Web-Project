@@ -1,0 +1,49 @@
+
+body{
+    font-family: 'Open Sans', 'PTSans';
+    .container{
+        width: 980px;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    .grid {
+        height: 100%;
+        display: grid;
+        
+    }
+    .logo-footer {
+            grid-template-areas:
+            "logo socialMedia";
+            grid-template-columns: 1fr 1fr;
+        } 
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 10px;
+        .icon {
+            height: 25px;
+            width: 25px;
+            background-repeat: no-repeat;
+        }
+        
+        .wiFi {
+            background-image: url(images/wiFi.png);
+            background-position: center;
+        }
+        .facebook {
+            background-image: url(images/facebook.png);
+            background-position: center;
+        }
+        .twitter {
+            background-image: url(images/twitter.png);
+            background-position: center;
+        }
+        .in {
+            background-image: url(images/in.png);
+            background-position: center;
+        }
+    }   
+}
